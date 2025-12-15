@@ -1,3 +1,3 @@
 # Java Portfolio 
 
-Final semester java project. 
+Final semester java project items. 
