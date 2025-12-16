@@ -1,0 +1,19 @@
+public class Student {
+    private int id;
+    private String name;
+    private double cgpa;
+
+    public Student(int id, String name, double cgpa){
+        this.id = id;
+        this.name = name;
+        this.cgpa = cgpa;
+        
+    }
+
+    public void displayInfo(){
+        System.out.println("ID: "+ id);
+        System.out.println("Nmae: "+ name);
+        System.out.println("CGPA: "+ cgpa);
+    }
+    
+}
