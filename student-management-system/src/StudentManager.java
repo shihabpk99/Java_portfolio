@@ -20,4 +20,8 @@ public class StudentManager {
             System.out.println("------");
         }
     }
+
+    public int getStudentCount(){
+        return students.size();
+    }
 }
