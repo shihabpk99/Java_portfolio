@@ -63,5 +63,16 @@ public class StudentManager {
             System.out.println("Error loading data.");
         }
     }
+    
+    public void searchStudentById(int id) {
+    for (Student s : students) {
+        if (s.getId() == id) {
+            System.out.println("Student found:");
+            s.displayInfo();
+            return;
+        }
+    }
+    System.out.println("Student with ID " + id + " not found.");
+}
 
 }

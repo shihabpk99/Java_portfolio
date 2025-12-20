@@ -8,11 +8,11 @@ public class Main {
         int choice;
 
         do{
-            System.out.println("\n-- Student Management System --");
-            System.out.println("1. Add Student");
-            System.out.println("2. View All Students");
-            System.out.println("3. Exit");
-            System.out.print("Enter choice: ");
+        System.out.println("1. Add Student");
+        System.out.println("2. View All Students");
+        System.out.println("3. Search Student by ID");
+        System.out.println("4. Exit");
+        System.out.print("Enter choice: ");
 
             choice = scanner.nextInt();
 
@@ -33,12 +33,16 @@ public class Main {
             }
         else if(choice == 2){
             manager.displayAllStudents();
-        }else if(choice == 3){
-            System.out.println("Exiting system. Goodbye!");
-        }else{
-            System.out.println("Invalid choice. Please try again.");
-        }
-    } while(choice != 3);
+       } else if (choice == 3) {
+        System.out.print("Enter student ID to search: ");
+        int searchId = scanner.nextInt();
+        manager.searchStudentById(searchId);
+       } else if (choice == 4) {
+        System.out.println("Exiting system. Goodbye!"); 
+       }
+     }
+       while(choice != 4);
         scanner.close();
-    }
+
+ }
 }
