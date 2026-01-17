@@ -75,4 +75,16 @@ public class StudentManager {
     System.out.println("Student with ID " + id + " not found.");
 }
 
+public void removeStudentById(int id) {
+    for (int i = 0; i < students.size(); i++) {
+        if (students.get(i).getId() == id) {
+            students.remove(i);
+            System.out.println("Student removed successfully.");
+            return;
+        }
+    }
+    System.out.println("Student with ID " + id + " not found.");
+}
+
+
 }
