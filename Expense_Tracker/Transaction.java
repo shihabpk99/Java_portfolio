@@ -44,4 +44,13 @@ public class Transaction {
     System.out.println("------");
 }
 
+@Override
+public String toString() {
+    return "ID: " + id +
+           ", Type: " + type +
+           ", Category: " + category +
+           ", Amount: " + amount +
+           ", Date: " + date;
+}
+
 }

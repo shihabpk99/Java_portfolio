@@ -12,13 +12,9 @@ public class ExpenseManager {
     }
 
     public void viewAllTransactions() {
-        if (transactions.isEmpty()) {
-            System.out.println("No transactions found.");
-            return;
-        }
-
         for (Transaction t : transactions) {
-            t.display();
-        }
+    System.out.println(t);
+}
+
     }
 }
